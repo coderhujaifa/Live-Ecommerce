@@ -4,23 +4,30 @@ import jakarta.persistence.*;
 import lombok.*;
 import java.math.BigDecimal;
 import java.time.OffsetDateTime;
-import java.util.UUID;
+import java.util.*;
 
 @Entity
-@Table(name="orders")
+@Table(name = "orders")
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
+@Builder
 public class Order {
+
   @Id
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private Long id;
+  @GeneratedValue
+  private UUID id;
 
-  private Long userId;
-  private Double totalAmount;
-  private String status; // PENDING, PAID, SHIPPED, DELIVERED
+  private String userId;
+  private BigDecimal totalAmount;
 
-  @OneToMany(cascade = CascadeType.ALL)
-  @JoinColumn(name = "order_id")
-  private List<OrderItem> items;
+  @Enumerated(EnumType.STRING)
+  private OrderStatus status; // CREATED, PAID, SHIPPED, DELIVERED, CANCELLED
+
+  private OffsetDateTime createdAt;
+  private OffsetDateTime updatedAt;
+
+  @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true)
+  private List<OrderItem> items = new ArrayList<>();
 }
