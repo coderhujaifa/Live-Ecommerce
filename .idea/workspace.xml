@@ -5,38 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49542da8-3b99-48d0-b07b-af8ea69df5f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/client/ProductClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/domain/OrderStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/request/OrderItemRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/request/OrderItemResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/request/OrderRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/request/OrderResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product-service/src/main/java/com/livecommerce/product/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product-service/src/main/java/com/livecommerce/product/exception/GlobalExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/order-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/OrderServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/OrderServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/api/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/api/PaymentsWebhookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/controller/PaymentsWebhookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/api/SettlementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/controller/SettlementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/client/ProductClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/client/ProductClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/controller/OrderController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/domain/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/domain/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/domain/OrderItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/domain/Settlement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/repository/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/repository/SettlementRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/repository/SettlementRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/order-service/target/classes/com/livecommerce/order/OrderServiceApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/order-service/target/classes/com/livecommerce/order/api/OrderController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/order-service/target/classes/com/livecommerce/order/api/PaymentsWebhookController$Webhook.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/order-service/target/classes/com/livecommerce/order/api/PaymentsWebhookController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/order-service/target/classes/com/livecommerce/order/api/SettlementController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/order-service/target/classes/com/livecommerce/order/config/SecurityConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/order-service/target/classes/com/livecommerce/order/domain/Order$OrderBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/order-service/target/classes/com/livecommerce/order/domain/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/order-service/target/classes/com/livecommerce/order/domain/Settlement$SettlementBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/order-service/target/classes/com/livecommerce/order/domain/Settlement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/order-service/target/classes/com/livecommerce/order/repository/OrderRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/order-service/target/classes/com/livecommerce/order/repository/SettlementRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/domain/OrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/domain/OrderStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/request/OrderItemRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/request/OrderItemRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/request/OrderItemResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/request/OrderItemResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/request/OrderRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/request/OrderRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/request/OrderResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/request/OrderResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/product-service/src/main/java/com/livecommerce/product/api/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/product-service/src/main/java/com/livecommerce/product/api/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/product-service/src/main/java/com/livecommerce/product/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/product-service/src/main/java/com/livecommerce/product/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/product-service/src/main/java/com/livecommerce/product/domain/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/product-service/src/main/java/com/livecommerce/product/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/product-service/src/main/java/com/livecommerce/product/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/product-service/src/main/java/com/livecommerce/product/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/product-service/src/main/java/com/livecommerce/product/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/product-service/src/main/java/com/livecommerce/product/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/product-service/src/main/java/com/livecommerce/product/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/product-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/product-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/product-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/product-service/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/product-service/target/classes/com/livecommerce/product/api/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/services/product-service/target/classes/com/livecommerce/product/api/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/product-service/target/classes/com/livecommerce/product/domain/Product$ProductBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/services/product-service/target/classes/com/livecommerce/product/domain/Product$ProductBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/product-service/target/classes/com/livecommerce/product/domain/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/services/product-service/target/classes/com/livecommerce/product/domain/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/product-service/target/classes/com/livecommerce/product/repository/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/services/product-service/target/classes/com/livecommerce/product/repository/ProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/product-service/target/classes/com/livecommerce/product/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/services/product-service/target/classes/com/livecommerce/product/service/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/product-service/target/classes/com/livecommerce/product/service/impl/ProductServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/services/product-service/target/classes/com/livecommerce/product/service/impl/ProductServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +112,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProductServiceApplication">
+  <component name="RunManager" selected="Spring Boot.OrderServiceApplication">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="live-ecommerce" />
       <method v="2">
@@ -174,7 +173,7 @@
       <workItem from="1761039457839" duration="363000" />
       <workItem from="1761043548274" duration="3289000" />
       <workItem from="1761108338921" duration="10417000" />
-      <workItem from="1761193680692" duration="5614000" />
+      <workItem from="1761193680692" duration="19581000" />
     </task>
     <servers />
   </component>
@@ -188,6 +187,11 @@
           <url>file://$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/client/EnableFeignClients.java</url>
           <line>2</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/services/order-service/src/main/java/com/livecommerce/order/domain/Order.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

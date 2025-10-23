@@ -17,13 +17,8 @@ public class OrderItem {
     @Id
     @GeneratedValue
     private UUID id;
-
-    private UUID productId;
+    private Long productId;
     private String productName;
-    private int quantity;
     private BigDecimal price;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "order_id")
-    private Order order;
+    private Integer quantity;
 }

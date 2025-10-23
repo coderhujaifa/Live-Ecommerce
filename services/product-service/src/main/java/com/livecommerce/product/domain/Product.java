@@ -1,13 +1,12 @@
 package com.livecommerce.product.domain;
+
 import jakarta.persistence.*;
 import lombok.*;
-
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
 @Entity
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-@Builder
 @Table(name = "products")
+@Getter @Setter @NoArgsConstructor @AllArgsConstructor @Builder
 public class Product {
 
   @Id
@@ -16,8 +15,11 @@ public class Product {
 
   private String name;
   private String description;
-  private Double price;
-  private Integer stock;
+  private BigDecimal price;
   private String category;
-
+  private boolean live;
+  private Integer stock;
+  private String imageUrl;
+  private LocalDateTime createdAt;
+  private LocalDateTime updatedAt;
 }

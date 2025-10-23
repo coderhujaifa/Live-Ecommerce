@@ -1,5 +1,8 @@
 package com.livecommerce.order.domain;
 
 public enum OrderStatus {
-  CREATED, PAID, SHIPPED, DELIVERED, CANCELLED
+  CREATED,
+  PAID,
+  SHIPPED,
+  DELIVERED
 }
