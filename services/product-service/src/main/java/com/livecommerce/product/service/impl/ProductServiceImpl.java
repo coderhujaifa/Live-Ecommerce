@@ -51,6 +51,7 @@ public class ProductServiceImpl implements ProductService {
         existing.setPrice(product.getPrice());
         existing.setCategory(product.getCategory());
         existing.setLive(product.isLive());
+        existing.setStock(product.getStock());
         existing.setUpdatedAt(LocalDateTime.now());
 
         if (imageFile != null && !imageFile.isEmpty()) {

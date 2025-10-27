@@ -64,10 +64,20 @@ public class ProductController {
     @PutMapping(value = "/{id}", consumes = {"multipart/form-data"})
     public ResponseEntity<Product> updateProduct(
             @PathVariable Long id,
-            @RequestPart("product") Product product,
+            @RequestPart("product") String productJson,
             @RequestPart(value = "image", required = false) MultipartFile imageFile
     ) {
-        return ResponseEntity.ok(productService.updateProduct(id, product, imageFile));
+        try {
+            // Convert JSON string to Product object manually
+            ObjectMapper mapper = new ObjectMapper();
+            Product product = mapper.readValue(productJson, Product.class);
+
+            Product updated = productService.updateProduct(id, product, imageFile);
+            return ResponseEntity.ok(updated);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
+        }
     }
 
     // 🔹 Delete product
