@@ -1,50 +1,92 @@
 package com.livecommerce.auth_service.controller;
 
-import com.livecommerce.auth_service.dto.*;
-import com.livecommerce.auth_service.entity.User;
-import com.livecommerce.auth_service.service.UserService;
+import com.livecommerce.auth_service.dto.AuthResponse;
+import com.livecommerce.auth_service.dto.LoginRequest;
+import com.livecommerce.auth_service.dto.RegisterRequest;
+import com.livecommerce.auth_service.service.AuthService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import jakarta.validation.Valid;
 import java.util.Map;
 
 @RestController
 @RequestMapping("/api/auth")
+@RequiredArgsConstructor
 public class AuthController {
 
-    private final UserService userService;
-    public AuthController(UserService userService) { this.userService = userService; }
+    private final AuthService authService;
 
+    // ✅ REGISTER — create new user
     @PostMapping("/register")
-    public Map<String, String> register(@RequestBody RegisterRequest request) {
-        return userService.register(request);
+    public ResponseEntity<?> register(@Valid @RequestBody RegisterRequest request) {
+        try {
+            AuthResponse response = authService.register(request);
+            return ResponseEntity.ok(response);
+        } catch (RuntimeException e) {
+            return ResponseEntity.badRequest().body(Map.of(
+                    "error", e.getMessage()));
+        }
     }
 
+    // ✅ LOGIN — authenticate and return JWT token
     @PostMapping("/login")
-    public Map<String, String> login(@RequestBody LoginRequest request) {
-        return userService.login(request);
+    public ResponseEntity<?> login(@Valid @RequestBody LoginRequest request) {
+        try {
+            AuthResponse response = authService.login(request);
+            return ResponseEntity.ok(response);
+        } catch (RuntimeException e) {
+            return ResponseEntity.badRequest().body(Map.of(
+                    "error", e.getMessage()));
+        }
+    }
+
+    // ✅ VALIDATE TOKEN — check if JWT is valid (for other microservices)
+    @PostMapping("/validate")
+    public ResponseEntity<?> validateToken() {
+        // If this endpoint is reached, the JWT filter already validated the token
+        // Spring Security context will contain the authenticated user
+        return ResponseEntity.ok(Map.of("valid", true));
+    }
+
+    // ✅ ME — get user info from authenticated context
+    @GetMapping("/me")
+    public ResponseEntity<?> getCurrentUser() {
+        try {
+            // Get the authenticated user from Spring Security context
+            String email = authService.getCurrentUserEmail();
+            return ResponseEntity.ok(Map.of("email", email));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(Map.of(
+                    "error", e.getMessage()));
+        }
     }
 
     @PostMapping("/refresh")
-    public Map<String, String> refresh(@RequestBody Map<String, String> body) {
-        String username = body.get("username");
-        String role = body.get("role");
-        return userService.refresh(username, role);
+    public ResponseEntity<?> refresh(@RequestBody Map<String, String> request) {
+        String refreshToken = request.get("refreshToken");
+        try {
+            AuthResponse response = authService.refreshToken(refreshToken);
+            return ResponseEntity.ok(response);
+        } catch (RuntimeException e) {
+            return ResponseEntity.status(401).body(Map.of("error", e.getMessage()));
+        }
     }
 
-    @GetMapping("/me")
-    public User me(@RequestParam String username) {
-        return userService.getProfile(username);
-    }
 
-    @PutMapping("/profile")
-    public Map<String, String> updateProfile(@RequestParam String username,
-                                             @RequestBody UpdateProfileRequest request) {
-        userService.updateProfile(username, request);
-        return Map.of("message", "Profile updated successfully");
-    }
-
-    @PostMapping("/logout")
-    public Map<String, String> logout() {
-        return Map.of("message", "Logout successful");
+    // ✅ EXAMPLE PROTECTED ENDPOINT — demonstrates how other endpoints should work
+    @GetMapping("/protected")
+    public ResponseEntity<?> protectedEndpoint() {
+        try {
+            String email = authService.getCurrentUserEmail();
+            return ResponseEntity.ok(Map.of(
+                    "message", "This is a protected endpoint",
+                    "authenticatedUser", email,
+                    "timestamp", System.currentTimeMillis()));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(Map.of(
+                    "error", e.getMessage()));
+        }
     }
 }

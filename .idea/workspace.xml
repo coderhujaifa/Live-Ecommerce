@@ -5,90 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49542da8-3b99-48d0-b07b-af8ea69df5f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/config/CustomUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/config/JwtAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/config/JwtService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/dto/AuthResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/dto/LoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/dto/LoginResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/dto/RegisterRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/dto/UpdateProfileRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/exception/CustomException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/service/JwtService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/service/impl/AuthServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/compliance-service/src/main/java/com/livecommerce/compliance_service/controller/KycController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/compliance-service/src/main/java/com/livecommerce/compliance_service/dto/KycRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/compliance-service/src/main/java/com/livecommerce/compliance_service/dto/KycResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/compliance-service/src/main/java/com/livecommerce/compliance_service/dto/KycVerifyRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/compliance-service/src/main/java/com/livecommerce/compliance_service/entity/KycInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/compliance-service/src/main/java/com/livecommerce/compliance_service/entity/KycStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/compliance-service/src/main/java/com/livecommerce/compliance_service/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/compliance-service/src/main/java/com/livecommerce/compliance_service/exception/ResourceNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/compliance-service/src/main/java/com/livecommerce/compliance_service/mapper/KycMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/compliance-service/src/main/java/com/livecommerce/compliance_service/repository/KycRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/compliance-service/src/main/java/com/livecommerce/compliance_service/service/KycService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/compliance-service/src/main/java/com/livecommerce/compliance_service/service/impl/KycServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/auth-service.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth-service/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth-service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth-service/REFRESH_TOKEN_USAGE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth-service/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/example/auth_service/AuthServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/example/auth_service/config/CustomUserDetailsService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/example/auth_service/config/JwtAuthenticationFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/example/auth_service/config/JwtService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/example/auth_service/config/SecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/example/auth_service/controller/AuthController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/example/auth_service/dto/AuthResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/example/auth_service/dto/LoginRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/example/auth_service/dto/LoginResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/example/auth_service/dto/RegisterRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/example/auth_service/entity/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/example/auth_service/repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/example/auth_service/service/AuthService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/example/auth_service/service/Impl/AuthServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth-service/src/test/java/com/example/auth_service/AuthServiceApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/compliance-service/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/services/compliance-service/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/compliance-service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/services/compliance-service/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/compliance-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/services/compliance-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/compliance-service/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/services/compliance-service/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/config/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/config/CustomUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/config/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/config/JwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/config/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/config/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/dto/AuthResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/dto/AuthResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/dto/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/dto/LoginRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/dto/LoginResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/dto/LoginResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/dto/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/dto/RegisterRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/dto/UpdateProfileRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/exception/CustomException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/service/JwtService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/service/impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/com/livecommerce/auth_service/service/impl/AuthServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/compliance-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/compliance-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/compliance-service/src/main/java/com/example/compliance_service/ComplianceServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/compliance-service/src/main/java/com/example/compliance_service/controller/KycController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/compliance-service/src/main/java/com/example/compliance_service/dto/KycRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/compliance-service/src/main/java/com/example/compliance_service/dto/KycResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/compliance-service/src/main/java/com/example/compliance_service/dto/KycVerifyRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/compliance-service/src/main/java/com/example/compliance_service/entity/KycInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/compliance-service/src/main/java/com/example/compliance_service/enums/KycStatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/compliance-service/src/main/java/com/example/compliance_service/exception/GlobalExceptionHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/compliance-service/src/main/java/com/example/compliance_service/exception/ResourceNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/compliance-service/src/main/java/com/example/compliance_service/mapper/KycMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/compliance-service/src/main/java/com/example/compliance_service/repository/KycRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/compliance-service/src/main/java/com/example/compliance_service/service/KycService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/compliance-service/src/main/java/com/example/compliance_service/service/impl/KycServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/compliance-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/compliance-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/compliance-service/src/test/java/com/example/compliance_service/ComplianceServiceApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/gateway-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/gateway-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/order-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/order-service/target/order-service-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/services/order-service/target/order-service-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/order-service/target/order-service-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/services/order-service/target/order-service-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/product-service/target/product-service-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/services/product-service/target/product-service-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/product-service/target/product-service-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/services/product-service/target/product-service-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,44 +56,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.AuthServiceApplication (1).executor": "Run",
-    "Spring Boot.AuthServiceApplication.executor": "Run",
-    "Spring Boot.ComplianceServiceApplication (1).executor": "Run",
-    "Spring Boot.ComplianceServiceApplication.executor": "Run",
-    "Spring Boot.ConfigServerApplication (1).executor": "Run",
-    "Spring Boot.ConfigServerApplication.executor": "Run",
-    "Spring Boot.DiscoveryApplication.executor": "Run",
-    "Spring Boot.GatewayApplication (1).executor": "Run",
-    "Spring Boot.GatewayApplication (2).executor": "Run",
-    "Spring Boot.GatewayApplication.executor": "Run",
-    "Spring Boot.OrderServiceApplication.executor": "Run",
-    "Spring Boot.PaymentsServiceApplication.executor": "Run",
-    "Spring Boot.ProductServiceApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/Spring-Project/live-ecommerce",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.configurations.included.in.services": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AuthServiceApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.AuthServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ComplianceServiceApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ComplianceServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ConfigServerApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ConfigServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.DiscoveryApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GatewayApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GatewayApplication (2).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.OrderServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.PaymentsServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ProductServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Spring-Project/live-ecommerce&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.livecommerce.order" />
@@ -196,7 +131,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ComplianceServiceApplication (1)">
+  <component name="RunManager" selected="Spring Boot.AuthServiceApplication (1)">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="live-ecommerce" />
       <method v="2">
@@ -343,6 +278,7 @@
       <workItem from="1761376295537" duration="3613000" />
       <workItem from="1761540974753" duration="13186000" />
       <workItem from="1761625772443" duration="12867000" />
+      <workItem from="1761715188052" duration="7350000" />
     </task>
     <servers />
   </component>

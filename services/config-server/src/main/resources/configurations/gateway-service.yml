@@ -23,7 +23,3 @@ spring:
           uri: lb://PRODUCT-SERVICE
           predicates:
             - Path=/api/products/**
-        - id: compliance-service
-          uri: lb://COMPLIANCE-SERVICE
-          predicates:
-              - Path=/kyc/**
